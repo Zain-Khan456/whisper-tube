@@ -1,0 +1,194 @@
+.wraper {
+  width: 100%;
+  height: auto;
+}
+
+.logo {
+  height: auto;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.logo img {
+  width: 40px;
+  height: auto;
+}
+
+.logo-text {
+  height: auto;
+  color: #545454;
+  font-family: Inter;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.logo-text span {
+  color: #9f06ff;
+}
+
+.nav-elements li {
+  text-decoration: none;
+  list-style: none;
+  text-transform: capitalize;
+  color: #001a49;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+.signin-btn {
+  text-decoration: none;
+  margin-right: 36px;
+}
+
+.signin-btn span {
+  color: #001a49;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.GetStarted-btn {
+  padding: 16px;
+  text-decoration: none;
+  border-radius: 33px;
+  background: linear-gradient(44deg, #cd10ff 15.75%, #9f06ff 84.63%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.GetStarted-btn span {
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.hamburger-menu {
+  display: none;
+  color: rgb(120, 21, 145);
+}
+
+@media (max-width: 1000px) {
+  .logo {
+    width: 30% !important;
+  }
+  .end-btn {
+    width: 60% !important;
+  }
+  .hamburger-menu {
+    display: unset;
+  }
+  .hidemanu {
+    display: none !important;
+  }
+}
+
+.slidermenu-div {
+  position: absolute;
+  display: flex;
+  height: 88.5%;
+  width: 100%;
+  align-items: center;
+  z-index: 1;
+  justify-content: center;
+}
+
+.slidermenu-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: #ededed;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.slidermenu-navbtn-wraper {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slidermenu-navbtn {
+  width: 100%;
+  text-decoration: none;
+  color: #001a49;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slidermenu-navbtn:hover {
+  color: #858585;
+  transition: 0.3s;
+}
+
+.slidermenu-actionbtn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.slidermenu-actionbtn a {
+  text-decoration: none;
+}
+
+.slidermenu-actionbtn .GetStarted {
+  width: 120px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 33px;
+  background: linear-gradient(44deg, #cd10ff 15.75%, #9f06ff 84.63%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.slidermenu-actionbtn .signin {
+  display: flex;
+  width: 50px;
+  height: 40px;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  color: #001a49;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+}

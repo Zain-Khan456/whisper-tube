@@ -1,0 +1,12 @@
+@media (max-width: 800px) {
+  /* .sidenav {
+      display: none !important;
+    } */
+  .body {
+    width: 100% !important;
+  }
+}
+
+/* .sidenav {
+    z-index: 1;
+  } */

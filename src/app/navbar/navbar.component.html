@@ -1,0 +1,183 @@
+<div class="wraper">
+    <div class="row">
+        <div routerLink="/" class="col-2 mx-3 py-2 d-flex align-items-center logo ">
+            <img src="\assets\Logo.svg" alt="logo">
+            <p class="logo-text mt-2 mx-2">Whisper<span>Tube</span></p>
+        </div>
+        <div class="col-6 d-flex flex-row align-items-center justify-content-start nav-elements hidemanu">
+            <li routerLink="/">home</li>
+            <li routerLink="/newproject">create new project</li>
+            <li routerLink="/subtitles">video pedia</li>
+            <!-- <li routerLink="">blogs</li> -->
+        </div>
+        <div class="col-3 d-flex align-items-center justify-content-end end-btn">
+            <a href="#" class="signin-btn hidemanu"><span>Sign In</span></a>
+            <a href="#" class="GetStarted-btn mx-2 hidemanu"><span>Get Started</span></a>
+            <div class="hamburger-menu px-lg-5 px-4">
+                <a (click)="calledmenu()">
+                    <img src="\assets\Hambuger.svg" alt="menu">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="slidermenu-div" *ngIf="displaymenu===true">
+    <div class="slidermenu-options">
+        <div class="slidermenu-navbtn-wraper">
+            <a routerLink="/" class="slidermenu-navbtn my-3">
+                <span>Home</span>
+            </a>
+            <a routerLink="/newproject" class="slidermenu-navbtn my-3">
+                <span>create new project</span>
+            </a>
+            <a routerLink="/subtitles" class="slidermenu-navbtn my-3">
+                <span>video pedia</span>
+            </a>
+        </div>
+        <div class="slidermenu-actionbtn mt-5">
+            <a class="GetStarted mx-3 my-1">
+                Get Started
+            </a>
+            <a class="signin mx-3 my-1">Sign In</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="nav-bar-wraper">
+    <div class="topnav-bar px-2 py-2">
+        <mat-toolbar-row>
+            <div class="row container-fluid d-flex align-content-center ">
+                <div class="col-3 logo-elements mt-2 mx-3 mx-md-3 mx-sm-2">
+                    <a routerLink="/render"><img src="\assets\Logo.svg" alt="logo" class="logo">
+                        <p class="logo-text mt-2 mx-2">Whisper<span>Tube</span></p>
+                    </a>
+                </div>
+
+                <div class="col-5 nav-elements d-flex hidemanu">
+                    <a routerLink="/" class="nav-buttons mx-3">
+                        <span class="">Home</span>
+                    </a>
+                    <a routerLink="/newproject" class="nav-buttons mx-3">
+                        <span class="">Create Project</span>
+                    </a>
+                    <a routerLink="/videoubtitles" class="nav-buttons mx-3">
+                        <span class="">Videos</span>
+                    </a>
+                </div>
+                <div class="col-3 d-flex hidemanu navaction-btn">
+                    <a href="#" class="signin-btn"><span>Sign In</span></a>
+                    <a href="#" class="GetStarted-btn mx-2"><span>Get Started</span></a>
+                </div>
+                <div class="col-12 hamburger-menu-parent">
+                    <div class="hamburger-menu px-lg-5 px-4">
+                        <a href="#" (click)="calledmenu()">
+                            <img src="\assets\Hambuger.svg" alt="menu">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </mat-toolbar-row>
+    </div>
+
+
+
+ -->
+
+
+
+
+
+
+
+<!-- 
+<div class="topnav-bar px-2 py-2">
+    <mat-toolbar-row>
+        <div class="row container-fluid d-flex align-content-center">
+            <div class="col-2 nav-elements">
+                <span><a href="#"><img src="\assets\logo2.png" alt="logo" class="logo"></a></span>
+            </div>
+            <div class="col-6 nav-elements d-flex hidemanu">
+                <button mat-fab extended class="nav-buttons">
+                    <span class="mx-4 ">About</span>
+                </button>
+                <button mat-fab extended class="nav-buttons">
+                    <span class="mx-4">Pricing</span>
+                </button>
+                <button mat-fab extended class="nav-buttons">
+                    <span class="mx-4">Videos</span>
+                </button>
+            </div>
+            <div class="col-4 nav-elements nav-buttons d-flex justify-content-end hidemanu mt-1">
+                <button mat-fab extended class="nav-buttons">Sign In</button>
+                <button mat-fab extended class="getstarted-button">
+                    Get Started
+                </button>
+            </div>
+            <div class="col-10 justify-content-end">
+
+                menu here
+                <a href="#">Dropdown menu</a>
+                <ul class="dropdownitems">
+                    <li><a href="#">Dropdown 1</a></li>
+                    <li><a href="#">Dropdown 2</a></li>
+                    <li><a href="#">Dropdown 3</a></li>
+                    <li><a href="#">Dropdown 4</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </mat-toolbar-row>
+</div> -->
+
+
+
+<!-- <div class="dropdown menu">
+    <button mat-icon-button class="dropbtn">
+    </button>
+    <div class="dropdown-adustment">
+    <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
+</div> -->
+
+
+
+
+<!-- <div class="menu" style="background-color: red;">
+    <a href="#">
+        <mat-icon>menu</mat-icon></a>
+    <div>
+        <ul class="dropdownitems">
+            <li><a href="#">Dropdown 1</a></li>
+            <li><a href="#">Dropdown 2</a></li>
+            <li><a href="#">Dropdown 3</a></li>
+            <li><a href="#">Dropdown 4</a></li>
+        </ul>
+    </div>
+</div> -->

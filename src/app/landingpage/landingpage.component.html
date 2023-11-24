@@ -1,0 +1,460 @@
+<!-- Top Section  -->
+
+<section class="top-section">
+    <div class="bgstyle-card">
+    </div>
+    <div class="homescreen-wraper">
+        <div class="homecontent-top">
+            <div class="text-wraper">
+                <span class="mini-topheading text">AI SUMMARY GENERATOR</span>
+                <span class="main-topheading text">Generate concise summaries of your transcripts in seconds</span>
+                <span class="tophome-discription mt-2 text">Create beautiful webflow sites with flowbase. Clone for
+                    free and get started building a site today.</span>
+                <a href="#" class="get-account-btn mt-3 text"><span>Get a Free Account</span></a>
+                <div class="avatar-row mt-4">
+                    <img src="\assets\avatar1.svg" alt="avt1" class="avt" id="avt1">
+                    <img src="\assets\avatar2.svg" alt="avt2" class="avt">
+                    <img src="\assets\avatar3.svg" alt="avt3" class="avt">
+                    <p class="avt-text mt-1 mx-1 text">Join over <span style="color: #9F07FF;">4,000+</span> Customers
+                    </p>
+                </div>
+            </div>
+            <div class="laptop">
+                <img src="\assets\laptop.svg" class="laptopimg">
+                <!-- <div class="laptop-bg">
+                    <div class="laptop-screen">
+                    </div>
+                    <div class="laptop-content">
+                        <div class="laptop-content-wraper">
+                            <div class="horizontal-line">
+                                <img src="\assets\dot.svg" class="dot">
+                                <span class="heading text">Upload Your Files</span>
+                                <img src="\assets\Cross.svg" class="cross">
+                            </div>
+                            <div class="laptop-card">
+                                <div class="laptop-card-heading underline">
+                                    <span class="my-1 mx-3">Drop files here, <span style="color: #9F06FF;">browse
+                                            files</span></span>
+                                </div>
+                                <span class="underline"><img src="\assets\laptop-icon1.svg"
+                                        class="laptop-icon mx-2 my-1">My
+                                    Device</span>
+                                <span class="underline"><img src="\assets\laptop-icon2.svg"
+                                        class="laptop-icon mx-2 my-1">Google
+                                    Drive</span>
+                                <span class="underline"><img src="\assets\laptop-icon3.svg"
+                                        class="laptop-icon mx-2 my-1">Link</span>
+                                <span class="underline"><img src="\assets\laptop-icon4.svg"
+                                        class="laptop-icon mx-2 my-1">Dropbox</span>
+                                <span class=""><img src="\assets\laptop-icon5.svg"
+                                        class="laptop-icon mx-2 my-1">Instagram</span>
+                            </div>
+                            <div class="horizontal-line">
+                                <img src="\assets\dot.svg" class="dot">
+                                <span class="heading">Select audio Language</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="laptop-base1">
+                </div>
+                <div class="laptop-base2">
+                </div> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Card Section  -->
+
+<section class="card-section">
+    <div class="bg-semicir">
+        <img src="\assets\bg-semicir.svg" class="semicir">
+    </div>
+    <div class="sec-heading my-5 text-center">
+        <span>Key Features</span>
+    </div>
+    <div class="cards">
+        <div *ngFor="let item of carddata">
+            <div class="card m-2">
+                <img src={{item.img}} class="cardimgs">
+                <span class="cardheading my-3">{{item.name}}</span>
+                <div class="card-discription mx-3">
+                    <p>{{item.discription}}
+                    </p>
+                </div>
+                <span class="readmore mx-2">Read More <img src="\assets\readmore.svg" class="mx-2"></span>
+            </div>
+        </div>
+    </div>
+    <div class="bg-semicir2">
+        <img src="\assets\bg-semicir.svg" class="semicir">
+    </div>
+    <div class="viewall-btn my-4">
+        <a href="#" class="my-3"><span>View All<img src="\assets\viewallicon.svg" class="viewall-icon"></span></a>
+    </div>
+</section>
+
+
+<!-- Everything your videos need in ONE app Section  -->
+
+<section class="app-detail-section">
+    <div class="sec-heading my-5 text-center">
+        <span>Everything your videos need in ONE app</span>
+    </div>
+    <div class="app-detail-main">
+        <div class="app-card-div">
+            <div class="vertical-cards my-1" *ngFor="let item of vercards" (click)="showImage(item.operation)">
+                <span class="card-wrapper">
+                    <div class="icon-bg mx-2"><img [src]="item.icon" class="detail-card-icon"></div>
+                    <p class="mt-3">{{item.operation}}</p>
+                </span>
+            </div>
+
+        </div>
+        <div class=" app-detail-wrapper mx-3 my-1">
+            <div class="app-detail-div">
+                <div class="app-detail-div-mini">
+                    <div class="app-detail-img-div">
+                        <img src={{carddetail.img}} class="app-detail-img">
+                    </div>
+                    <div>
+                        <p class="app-detail-txt text-center mt-3 ">Lorem ipsum dolor sit amet consectetur
+                            adipisicing
+                            elit. Optio
+                            dolorem reprehenderit
+                            excepturi
+                            maiores nostrum provident. Debitis necessitatibus aut in sapiente at ipsam fuga sint
+                            nihil
+                            cumque, odit aspernatur ad. Necessitatibus.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- What client says -->
+<section class="mb-5">
+    <div class="container mt-5 mb-5">
+        <div class="sec-heading my-5 text-center">
+            <span>What client says</span>
+        </div>
+
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div *ngFor="let item of scrollcards; let i = index"
+                    [ngClass]="{'carousel-item': true, 'active': i === 0}">
+                    <h1>{{item.title}}</h1>
+                    <h4>{{item.subtitle}}</h4>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-btn my-5">
+            <button mat-mini-fab class="mx-2" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <mat-icon>arrow_back</mat-icon>
+            </button>
+            <button mat-mini-fab class="mx-2" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <mat-icon>arrow_forward</mat-icon>
+            </button>
+        </div>
+
+
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button> -->
+
+        <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div *ngFor="let item of scrollcards; let i = index" [ngClass]="{'item': true, 'active': i < 3}">
+                    <h1>{{item.title}}</h1>
+                    <h4>{{item.subtitle}}</h4>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div> -->
+
+
+
+
+
+
+        <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="cards-wrapper">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="\assets\card-avatar1.png" class="section-image" />
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-title d-flex justify-content-center">
+                                    Voice presidenet
+                                </p>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Cumque quas aspernatur rem at adipisci vitae maiores ad est
+                                    architecto, beatae nemo sed, id dolore, iure omnis inventore
+                                    commodi? Inventore, unde.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-title d-flex justify-content-center">
+                                    Voice presidenet
+                                </p>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Cumque quas aspernatur rem at adipisci vitae maiores ad est
+                                    architecto, beatae nemo sed, id dolore, iure omnis inventore
+                                    commodi? Inventore, unde.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-title d-flex justify-content-center">
+                                    Voice presidenet
+                                </p>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Cumque quas aspernatur rem at adipisci vitae maiores ad est
+                                    architecto, beatae nemo sed, id dolore, iure omnis inventore
+                                    commodi? Inventore, unde.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="cards-wrapper">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-title d-flex justify-content-center">
+                                    Voice presidenet
+                                </p>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Cumque quas aspernatur rem at adipisci vitae maiores ad est
+                                    architecto, beatae nemo sed, id dolore, iure omnis inventore
+                                    commodi? Inventore, unde.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-title d-flex justify-content-center">
+                                    Voice presidenet
+                                </p>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Cumque quas aspernatur rem at adipisci vitae maiores ad est
+                                    architecto, beatae nemo sed, id dolore, iure omnis inventore
+                                    commodi? Inventore, unde.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-title d-flex justify-content-center">
+                                    Voice presidenet
+                                </p>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Cumque quas aspernatur rem at adipisci vitae maiores ad est
+                                    architecto, beatae nemo sed, id dolore, iure omnis inventore
+                                    commodi? Inventore, unde.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="cards-wrapper">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-title d-flex justify-content-center">
+                                    Voice presidenet
+                                </p>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Cumque quas aspernatur rem at adipisci vitae maiores ad est
+                                    architecto, beatae nemo sed, id dolore, iure omnis inventore
+                                    commodi? Inventore, unde.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-title d-flex justify-content-center">
+                                    Voice presidenet
+                                </p>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Cumque quas aspernatur rem at adipisci vitae maiores ad est
+                                    architecto, beatae nemo sed, id dolore, iure omnis inventore
+                                    commodi? Inventore, unde.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-title d-flex justify-content-center">
+                                    Voice presidenet
+                                </p>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Pariatur totam, eius assumenda modi facilis quam maiores iste
+                                    alias quos quo distinctio culpa. Suscipit non hic, praesentium
+                                    omnis amet expedita harum!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div> -->
+    </div>
+    <!-- 
+    <div class="sec-heading my-5 text-center">
+        <span>What client says</span>
+    </div>
+    <div class="scrolling-cards-div">
+        <mat-card class="scrolling-card mx-2 p-4">
+            <div class="card-header">
+                <img src="\assets\card-avatar1.png" class="scrolling-card-avt">
+                <div class="mt-2">
+                    <p class="scrolling-card-title">title</p>
+                    <p class="scrolling-card-subtitle">subtitle</p>
+                </div>
+            </div>
+            <div class="scrolling-card-detail mt-2">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum inventore corporis
+                    consectetur.
+                    Numquam placeat perferendis accusamus, harum saepe, quae quam suscipit sequi illum laboriosam maxime
+                    facere libero, assumenda eius quisquam?
+                    <div class="scrolling-card-quote">
+                        <mat-icon>format_quote</mat-icon>
+                    </div>
+                </span>
+            </div>
+        </mat-card>
+        <mat-card class="scrolling-card mx-2 p-4">
+            <div class="card-header">
+                <img src="\assets\card-avatar1.png" class="scrolling-card-avt">
+                <div class="mt-2">
+                    <p class="scrolling-card-title">title</p>
+                    <p class="scrolling-card-subtitle">subtitle</p>
+                </div>
+            </div>
+            <div class="scrolling-card-detail mt-2">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum inventore corporis
+                    consectetur.
+                    Numquam placeat perferendis accusamus, harum saepe, quae quam suscipit sequi illum laboriosam maxime
+                    facere libero, assumenda eius quisquam?
+                    <div class="scrolling-card-quote">
+                        <mat-icon>format_quote</mat-icon>
+                    </div>
+                </span>
+            </div>
+        </mat-card>
+        <mat-card class="scrolling-card mx-2 p-4">
+            <div class="card-header">
+                <img src="\assets\card-avatar1.png" class="scrolling-card-avt">
+                <div class="mt-2">
+                    <p class="scrolling-card-title">title</p>
+                    <p class="scrolling-card-subtitle">subtitle</p>
+                </div>
+            </div>
+            <div class="scrolling-card-detail mt-2">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum inventore corporis
+                    consectetur.
+                    Numquam placeat perferendis accusamus, harum saepe, quae quam suscipit sequi illum laboriosam maxime
+                    facere libero, assumenda eius quisquam?
+                    <div class="scrolling-card-quote">
+                        <mat-icon>format_quote</mat-icon>
+                    </div>
+                </span>
+            </div>
+        </mat-card>
+        <mat-card class="scrolling-card mx-2 p-4">
+            <div class="card-header">
+                <img src="\assets\card-avatar1.png" class="scrolling-card-avt">
+                <div class="mt-2">
+                    <p class="scrolling-card-title">title</p>
+                    <p class="scrolling-card-subtitle">subtitle</p>
+                </div>
+            </div>
+            <div class="scrolling-card-detail mt-2">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum inventore corporis
+                    consectetur.
+                    Numquam placeat perferendis accusamus, harum saepe, quae quam suscipit sequi illum laboriosam maxime
+                    facere libero, assumenda eius quisquam?
+                    <div class="scrolling-card-quote">
+                        <mat-icon>format_quote</mat-icon>
+                    </div>
+                </span>
+            </div>
+        </mat-card>
+        <mat-card class="scrolling-card mx-2 p-4">
+            <div class="card-header">
+                <img src="\assets\card-avatar1.png" class="scrolling-card-avt">
+                <div class="mt-2">
+                    <p class="scrolling-card-title">title</p>
+                    <p class="scrolling-card-subtitle">subtitle</p>
+                </div>
+            </div>
+            <div class="scrolling-card-detail mt-2">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum inventore corporis
+                    consectetur.
+                    Numquam placeat perferendis accusamus, harum saepe, quae quam suscipit sequi illum laboriosam maxime
+                    facere libero, assumenda eius quisquam?
+                    <div class="scrolling-card-quote">
+                        <mat-icon>format_quote</mat-icon>
+                    </div>
+                </span>
+            </div>
+        </mat-card>
+    </div> -->
+
+</section>

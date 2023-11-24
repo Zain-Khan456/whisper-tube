@@ -1,0 +1,158 @@
+/* Footer */
+
+.footer-bg {
+  width: 100%;
+  height: auto;
+  background: #fcf3ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-content {
+  width: 80%;
+  height: 80%;
+}
+
+.footer-logo {
+  height: 35px;
+  width: 35px;
+}
+
+.footer-logo-text {
+  color: #545454;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.footer-logo-text span {
+  color: #9f06ff;
+}
+
+.searchbar {
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
+}
+
+.search-txt {
+  width: 100%;
+  padding-left: 18px;
+  border: none;
+  background: #fff;
+  color: #4f596a;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.searchbtn {
+  height: auto;
+  width: 130px;
+  border-radius: 5px;
+  background: linear-gradient(44deg, #cd10ff 15.75%, #9f06ff 84.63%);
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.footer-tags {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.top-row {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+.bottom-row {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 50%;
+}
+
+.footer-col h4 {
+  color: #001a49;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.footer-col span {
+  color: #4f596a;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.footer-links {
+  color: var(--gray-900, #061c3d);
+  text-align: center;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.footerlineicon {
+  width: 20px;
+}
+
+.footer-icons img {
+  height: 30px;
+  width: 30px;
+}
+
+@media (max-width: 1020px) {
+  .footer-content {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .logo-div {
+    margin-bottom: 20px;
+  }
+  .footer-tags {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .top-row {
+    width: 100%;
+  }
+  .bottom-row {
+    width: 100%;
+  }
+}
+
+@media (max-width: 850px) {
+  .bottom-row {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .footer-end-col-upper {
+    width: 100%;
+  }
+  .footer-end-col {
+    width: 100%;
+  }
+}
